@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
-</head>
-<body>
-    <h1>WDD 131 - Anton Gorokhov</h1>
-    <p>second commit test</p>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals Home Page made by Anton Gorokhov">
+    <meta name="author" content="Anton Gorokhov">
+    <link href="styles/base.css" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Anton Gorokhov</title>
+  </head>
+  <body>
+    <header>
+      <h1>WDD 131: Dynamic Web Fundamentals - Anton Gorokhov</h1>
+      <nav>
+        <a href="https://www.linkedin.com/in/anton-gorokhov">LinkedIn</a>
+        <a href="https://byui.instructure.com/">I-Learn</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+        <a href="#">Final Project</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="cardHeader">
+          <h2>About Me</h2>
+        </div>
+
+        <div id="me">
+          <p id="meDesc">
+            My name is Anton, I'm from Perm city, Russia. I am a doctor and have
+            worked as a doctor for over 13 years. At this moment I decided to
+            change my profession and type of activity. I am independently trying
+            to learn programming languages such as Java and Kotlin and want to
+            master the development of Android applications. To obtain education
+            and fundamental knowledge, I entered BAYU University and chose the
+            only specialty related to application development - Web programming.
+            IM married. In my free time I study, I prefer to spend time with my
+            family. My hobbies are snowboarding and computer games.
+          </p>
+          <img src="images/myphoto.jpg" alt="a photo of Anton Gorokhov">
+        </div>
+        <h2>Perm, Russian Federation</h2>
+        <div id="aboutPerm">
+          <img src="images/russianFlag.jpg" alt="russian flag">
+          <p>
+            The city of Perm recently celebrated its 300th anniversary. Here are
+            some facts about this city. The word “Perm”, according to one
+            version, comes from the word “parma” - an elevated area overgrown
+            with spruce. “Permyak salty ears” is a traditional nickname for the
+            inhabitants of the Perm lands. The geological term "Permian" was
+            named after this city. In Perm there is the world's largest cast
+            iron cannon - the Perm "Tsar Cannon", cast in 1869 for one of the
+            frigates. Perm has the same street layout as New York - a “grid”.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="cardHeader">
+          <h2>Web Dev Resources</h2>
+        </div>
+
+        <ul id="webDevResources">
+          <li>
+            <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+          </li>
+          <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+          <li><a href="https://coolors.co/">Coolors</a></li>
+          <li><a href="https://colorhunt.co/">Colorhunt</a></li>
+          <li>
+            <a href="https://learnlayout.com/toc.html">Learn CSS Layout</a>
+          </li>
+          <li><a href="https://www.pexels.com/">Free Stock Photos</a></li>
+          <li><a href="https://placekitten.com/">Placeholder Cat Images</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p><span id="currentYear">202444</span> &#9774; Anton Gorokhov &#9774; Russia</p>
+      <p id="lastModified">placeholder</p>
+    </footer>
+  </body>
 </html>

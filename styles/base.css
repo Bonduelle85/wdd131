@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Inclusive+Sans&display=swap');
+
+body{
+    font-family: 'Inclusive Sans', Helvetica, sans-serif;
+}
+
+h1{
+    font-family: "Sedan", serif;
+    text-align: center;
+    padding: 2%;
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p , a{
+    font-size: 1.3rem;
+}
+
+a{
+    font-size: 2rem
+}
+
+img{
+    width: 100%;
+}
+body{
+    background-color: #ffffff;
+}
+
+header{
+    background-color: #6490ee;
+    border: 4px solid rgb(26, 104, 230);
+    border-radius: 5px;
+}
+
+nav{
+    display: flex;
+    background-color: #0b6882;
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    flex-direction: row;
+    width: 100%;
+    padding: 1%;
+    margin: 1%;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+main{
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    gap: 1%;
+    max-width:100%;
+    padding: 1%;
+    margin: 1%;
+}
+
+.card{
+    border: 4px solid rgb(26, 104, 230);
+    border-radius: 5px;
+}
+
+
+section:nth-child(1){
+    grid-column: 1/2;
+    background-color: rgb(120, 207, 226);
+    
+    display: grid;
+    grid-template: auto 2fr/ 1fr 1fr 1fr ;
+}
+
+.cardHeader{
+    text-align: center;
+    grid-column: 1/4;
+    background-color: #6490ee;
+}
+
+section h2{
+    text-align: center;
+    grid-column: 1/4;
+}
+
+#me{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2%;
+    margin: 2%;
+}
+
+#meDesc{
+    padding:2%;
+    margin: 2%;
+    text-align: justify;
+}
+
+#aboutPerm{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+#aboutPerm p, #aboutPerm img{
+    margin: 2%; 
+}
+
+section:nth-child(2){
+    background-color: rgb(120, 207, 226);
+    display: grid;
+    grid-template: auto 3fr/ 1fr ;
+}
+
+#webDevResources{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#webDevResources li a {
+    text-decoration: none;
+}
+
+#webDevResources li a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    background-color: #6490ee;
+    align-items: center;
+    border: 4px solid rgb(26, 104, 230);
+    border-radius: 5px;
+}
+
+img {
+    border: 4px solid rgb(26, 104, 230);
+    border-radius: 5px;
+}
+
