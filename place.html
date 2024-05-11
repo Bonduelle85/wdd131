@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WDD 131 Place Page by Anton Gorokhov" />
+    <meta name="author" content="Anton Gorokhov" />
+
+    <link href="styles/place.css" rel="stylesheet" />
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Sansita"
+      rel="stylesheet"
+    />
+
+    <title>Place Page</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="white"></div>
+      <h1 id="blue">Russia</h1>
+      <div id="red"></div>
+    </header>
+    <main>
+      <div class="main-img">
+        <picture>
+          <source srcset="images/moscow-l.webp" media="(min-width: 900px)" />
+          <source srcset="images/moscow-m.webp" media="(min-width: 600px)" />
+          <img src="images/moscow-s.webp" alt="Moscow" width="500" />
+        </picture>
+      </div>
+
+      <div class="data">
+        <h2>Data</h2>
+        <table id="data-table">
+          <tr>
+            <th class="label">Area:</th>
+            <td id="area" class="value">17.075.200 km&sup2;</td>
+          </tr>
+          <tr>
+            <th class="label">Population:</th>
+            <td id="population" class="value">146.150.789 (2016)</td>
+          </tr>
+          <tr>
+            <th class="label">Country:</th>
+            <td id="country" class="value">Russian Federation</td>
+          </tr>
+          <tr>
+            <th class="label">Capital:</th>
+            <td id="capital" class="value">Moscow</td>
+          </tr>
+          <tr>
+            <th class="label">Languages:</th>
+            <td id="languages" class="value">Russian</td>
+          </tr>
+          <tr>
+            <th class="label">Currency:</th>
+            <td id="currency" class="value">RUB - Ruble</td>
+          </tr>
+          <tr>
+            <th class="label">Time Zone:</th>
+            <td id="time-zone" class="value">GMT+3</td>
+          </tr>
+          <tr>
+            <th class="label">Calling Code:</th>
+            <td id="calling-code" class="value">+7</td>
+          </tr>
+          <tr>
+            <th class="label">Internet TLD:</th>
+            <td id="internet-tld" class="value">.ru</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="weather">
+        <h2>Weather</h2>
+        <img id="weather-icon" src="images/weather.svg" alt="Weather Icon" width="80" height="80"/>
+
+        <table id="weather-table">
+          <tr>
+            <th class="label">Temperature:</th>
+            <td id="temperature" class="value">4&#176;C</td>
+          </tr>
+          <tr>
+            <th class="label">Conditions:</th>
+            <td id="conditions" class="value">Cloudy</td>
+          </tr>
+          <tr>
+            <th class="label">Rel Humidity:</th>
+            <td id="rel-humidity" class="value">71%</td>
+          </tr>
+          <tr>
+            <th class="label">Wind:</th>
+            <td id="wind" class="value">20 km/h</td>
+          </tr>
+          <tr>
+            <th class="label">Wind Chill Factor:</th>
+            <td id="wind-chill" class="value">N/A</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p><span id="currentYear"></span> | Anton Gorokhov | Russia</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

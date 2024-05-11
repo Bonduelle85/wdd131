@@ -1,0 +1,163 @@
+:root {
+    --flag-white: #dddddd;
+    --flag-red: #e73f3f;
+    --flag-blue: #0461a4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Sansita", sans-serif;
+}
+
+header {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#white {
+    background-color: var(--flag-white);
+    grid-row: 1 / 2;
+    border-top: 5px solid var(--flag-blue);
+}
+
+#blue {
+    background-color: var(--flag-red);
+    grid-row: 2 / 3;
+}
+
+#red {
+    background-color: var(--flag-blue);
+    grid-row: 3 / 4;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: var(--flag-white);
+    text-shadow: 3px -4px 5px var(--flag-blue);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5em;
+    background-color: var(--flag-white);
+    color: var(--flag-red);
+    text-align: center;
+    border-top: 5px solid var(--flag-blue);
+    border-bottom: 5px solid var(--flag-blue);
+}
+
+
+.main-img img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    background-color: var(--flag-red);
+    color: var(--flag-blue);
+    border-bottom: 5px solid var(--flag-white);
+}
+
+.data,
+.weather {
+    display: grid;
+    background-color: var(--flag-white);
+}
+
+table {
+    display: block;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+#weather-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    padding-top: 1rem;
+}
+
+.label,
+.value {
+    font-family: sans-serif;
+    font-size: 1em;
+    width: 175px;
+}
+
+.label {
+    text-align: right;
+    padding-right: 0.5rem;
+    font-weight: 600;
+}
+
+.value {
+    text-align: left;
+    padding-left: 0.5rem;
+    font-weight: 400;
+}
+
+footer {
+    background-color: var(--flag-blue);
+    font-family: sans-serif;
+    color: var(--flag-white);
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width: 770px) {
+
+    body {
+        position: relative;
+    }
+
+    table {
+        padding: 1rem;
+    }
+
+    .data {
+        position: absolute;
+        top: 300px;
+        left: 30px;
+        width: 350px;
+        background-color: var(--flag-white);
+        color: var(--flag-blue);
+        box-shadow: 0 0 15px var(--flag-blue);
+    }
+
+    h2 {
+        background-color: var(--flag-white);
+    }
+
+    .weather {
+        position: absolute;
+        right: 30px;
+        bottom: 180px;
+        width: 350px;
+        background-color: var(--flag-white);
+        color: var(--flag-blue);
+        display: grid;
+        box-shadow: 0 0 15px var(--flag-blue);
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        text-shadow: 0 0 3px white;
+    }
+
+    #weather-icon {
+        display: none;
+    }
+}
