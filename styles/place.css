@@ -2,6 +2,8 @@
     --flag-white: #dddddd;
     --flag-red: #e73f3f;
     --flag-blue: #0461a4;
+    --blue: #4682b4;
+    --red: #e47474;
 }
 
 * {
@@ -27,19 +29,34 @@ header {
 }
 
 #blue {
-    background-color: var(--flag-red);
+    background-color: var(--flag-blue);
     grid-row: 2 / 3;
 }
 
 #red {
-    background-color: var(--flag-blue);
+    background-color: var(--flag-red);
     grid-row: 3 / 4;
 }
 
 h1 {
     font-size: 3.5em;
     color: var(--flag-white);
-    text-shadow: 3px -4px 5px var(--flag-blue);
+
+    text-shadow:
+    -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+  color: var(--blue);
+  transition: all 1s;
 }
 
 h2 {
@@ -121,6 +138,10 @@ footer {
 
     body {
         position: relative;
+    }
+
+    h1:hover {
+        color: var(--red);
     }
 
     table {
