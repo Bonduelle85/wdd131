@@ -1,9 +1,9 @@
 :root {
-    --flag-white: #dddddd;
+    --flag-white: #ffffff;;
     --flag-red: #e73f3f;
     --flag-blue: #0461a4;
-    --blue: #4682b4;
-    --red: #e47474;
+    --blue: #004278;
+    --red: #a60202;
 }
 
 * {
@@ -43,18 +43,18 @@ h1 {
     color: var(--flag-white);
 
     text-shadow:
-    -1px -1px #FFF,
-    -2px -2px #FFF,
-    -1px 1px #FFF,
-    -2px 2px #FFF,
-    1px 1px #FFF,
-    2px 2px #FFF,
-    1px -1px #FFF,
-    2px -2px #FFF,
-    -3px -3px 2px #BBB,
-    -3px 3px 2px #BBB,
-    3px 3px 2px #BBB,
-    3px -3px 2px #BBB;
+    -1px -1px #ffffff,
+    -2px -2px #ffffff,
+    -1px 1px #ffffff,
+    -2px 2px #ffffff,
+    1px 1px #ffffff,
+    2px 2px #ffffff,
+    1px -1px #ffffff,
+    2px -2px #ffffff,
+    -3px -3px 2px #ffffff,
+    -3px 3px 2px #ffffff,
+    3px 3px 2px #ffffff,
+    3px -3px 2px #ffffff;
   color: var(--blue);
   transition: all 1s;
 }
@@ -63,12 +63,10 @@ h2 {
     font-weight: 700;
     font-size: 1.5em;
     background-color: var(--flag-white);
-    color: var(--flag-red);
+    color: var(--red);
     text-align: center;
-    border-top: 5px solid var(--flag-blue);
-    border-bottom: 5px solid var(--flag-blue);
+    border-bottom: 5px solid var(--blue);
 }
-
 
 .main-img img {
     display: block;
@@ -123,6 +121,7 @@ table {
     text-align: left;
     padding-left: 0.5rem;
     font-weight: 400;
+    color: var(--blue);
 }
 
 footer {
