@@ -1,8 +1,8 @@
 :root {
     --white: #ffffff;;
     --light-blue: #a0b9ee;
+    --nav-blue: #5ad2b4;
     --blue: #004278;
-    --red: #a60202;
     --black: black;
 }
 
@@ -44,7 +44,7 @@ header{
 
 nav{
     display: flex;
-    background-color: var(--light-blue);
+    background-color: var(--nav-blue);
 }
 
 nav a{
@@ -149,13 +149,13 @@ footer{
     text-align: center;
     background-color: var(--blue);
     align-items: center;
-    border: 4px solid var(--red);
+    border: 4px solid var(--blue);
     border-radius: 5px;
     color: var(--white);
 }
 
 img {
-    border: 4px solid var(--red);
+    border: 4px solid var(--blue);
     border-radius: 5px;
 }
 
