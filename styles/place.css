@@ -1,7 +1,7 @@
 :root {
-    --flag-white: #ffffff;;
     --flag-red: #e73f3f;
     --flag-blue: #0461a4;
+    --white: #ffffff;
     --blue: #004278;
     --red: #a60202;
 }
@@ -23,7 +23,7 @@ header {
 }
 
 #white {
-    background-color: var(--flag-white);
+    background-color: var(--white);
     grid-row: 1 / 2;
     border-top: 5px solid var(--flag-blue);
 }
@@ -40,29 +40,12 @@ header {
 
 h1 {
     font-size: 3.5em;
-    color: var(--flag-white);
-
-    text-shadow:
-    -1px -1px #ffffff,
-    -2px -2px #ffffff,
-    -1px 1px #ffffff,
-    -2px 2px #ffffff,
-    1px 1px #ffffff,
-    2px 2px #ffffff,
-    1px -1px #ffffff,
-    2px -2px #ffffff,
-    -3px -3px 2px #ffffff,
-    -3px 3px 2px #ffffff,
-    3px 3px 2px #ffffff,
-    3px -3px 2px #ffffff;
-  color: var(--blue);
-  transition: all 1s;
+    color: var(--white);
 }
 
 h2 {
     font-weight: 700;
     font-size: 1.5em;
-    background-color: var(--flag-white);
     color: var(--red);
     text-align: center;
     border-bottom: 5px solid var(--blue);
@@ -78,13 +61,13 @@ h2 {
 main {
     background-color: var(--flag-red);
     color: var(--flag-blue);
-    border-bottom: 5px solid var(--flag-white);
+    border-bottom: 5px solid var(--white);
 }
 
 .data,
 .weather {
     display: grid;
-    background-color: var(--flag-white);
+    background-color: var(--white);
 }
 
 table {
@@ -127,7 +110,7 @@ table {
 footer {
     background-color: var(--flag-blue);
     font-family: sans-serif;
-    color: var(--flag-white);
+    color: var(--white);
     padding: 1rem 1rem 1rem 1rem;
     text-align: center;
     margin: 0;
@@ -139,10 +122,6 @@ footer {
         position: relative;
     }
 
-    h1:hover {
-        color: var(--red);
-    }
-
     table {
         padding: 1rem;
     }
@@ -152,13 +131,9 @@ footer {
         top: 300px;
         left: 30px;
         width: 350px;
-        background-color: var(--flag-white);
+        background-color: var(--white);
         color: var(--flag-blue);
         box-shadow: 0 0 15px var(--flag-blue);
-    }
-
-    h2 {
-        background-color: var(--flag-white);
     }
 
     .weather {
@@ -166,15 +141,14 @@ footer {
         right: 30px;
         bottom: 180px;
         width: 350px;
-        background-color: var(--flag-white);
+        background-color: var(--white);
         color: var(--flag-blue);
         display: grid;
         box-shadow: 0 0 15px var(--flag-blue);
     }
 
     .weather h2::after {
-        content: "⛅";
-        text-shadow: 0 0 3px white;
+        content: "🌞";
     }
 
     #weather-icon {
