@@ -158,13 +158,13 @@ const makeCards = (templeList) => {
 
   document.querySelector("#old").addEventListener('click', () => {
     document.querySelector("#category-title").textContent = "Old"
-    const oldTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(0, 4)) < 1900);
+    const oldTemples = temples.filter((temple) => new Date(temple.dedicated).getFullYear() < 1900);
     makeCards(oldTemples);
   })
 
   document.querySelector("#new").addEventListener('click', () => {
     document.querySelector("#category-title").textContent = "New"
-    const newTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(0, 4)) > 2000);
+    const newTemples = temples.filter((temple) => new Date(temple.dedicated).getFullYear() > 2000);
     makeCards(newTemples);
   })
 
