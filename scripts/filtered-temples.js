@@ -9,7 +9,6 @@ hamButton.addEventListener("click", () => {
 });
 
 // temples list
-
 const temples = [
     {
       templeName: "Aba Nigeria",
@@ -115,7 +114,7 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tucson-arizona/400x250/tucson-arizona-temple-exterior-1929407-wallpaper.jpg"
     },
     {
-        templeName: "Columbia River Washington",
+        templeName: "Columbia River",
         location: "Columbia River, Washington",
         dedicated: "2001, November, 18",
         area: 16880,
@@ -131,3 +130,56 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-aires-argentina-temple-2012-1021302-wallpaper.jpg"
     },
   ];
+
+// makeCards function
+const makeCards = (templeList) => {
+    const container = document.querySelector("#temples");
+    container.innerHTML = "";
+    templeList.forEach((temple) => {
+        container.innerHTML += `<div class="card">
+            <h2>${temple.templeName}</h2>
+
+            <p><b>Location:</b> ${temple.location}</p>
+            <p><b>Dedicated:</b> ${temple.dedicated}</p>
+            <p><b>Size:</b> ${temple.area}</p>
+
+            <figure>
+                <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy" width="500" height="200">
+            </figure>
+        </div>`;
+    });
+};
+  
+  // Buttons and EventListeners
+  document.querySelector("#home").addEventListener('click', () => {
+    document.querySelector("#category-title").textContent = "Home"
+    makeCards(temples);
+  })
+
+  document.querySelector("#old").addEventListener('click', () => {
+    document.querySelector("#category-title").textContent = "Old"
+    const oldTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(0, 4)) < 1900);
+    makeCards(oldTemples);
+  })
+
+  document.querySelector("#new").addEventListener('click', () => {
+    document.querySelector("#category-title").textContent = "New"
+    const newTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(0, 4)) > 2000);
+    makeCards(newTemples);
+  })
+
+  document.querySelector("#large").addEventListener('click', () => {
+    document.querySelector("#category-title").textContent = "Large"
+    const largeTemples = temples.filter((temple) => temple.area > 90000);
+    makeCards(largeTemples);
+  })
+
+  document.querySelector("#small").addEventListener('click', () => {
+    document.querySelector("#category-title").textContent = "Small"
+    const smallTemples = temples.filter((temple) => temple.area < 10000);
+    makeCards(smallTemples);
+  })
+
+  // initial run
+  makeCards(temples);
+  
