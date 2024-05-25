@@ -125,6 +125,7 @@ fieldset legend {
 }
 .full-stars .rating-group {
   display: inline-flex;
+  flex-direction: row-reverse;
 }
 .full-stars input {
   position: absolute;
@@ -138,17 +139,17 @@ fieldset legend {
   margin: 2px;
   height: 40px;
   width: 40px;
-  fill: var(--rating-checked);
+  fill: var(--rating-empty);
   transition: fill 0.3s;
 }
 .full-stars input:checked ~ label svg {
-  fill: var(--rating-empty);
-}
-.full-stars .rating-group:hover label svg {
   fill: var(--rating-checked);
 }
-.full-stars .rating-group input:hover ~ label svg {
+.full-stars .rating-group:hover label svg {
   fill: var(--rating-empty);
+}
+.full-stars .rating-group input:hover ~ label svg {
+  fill: var(--rating-checked);
 }
 
 /* Review */
