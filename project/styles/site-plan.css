@@ -1,28 +1,26 @@
 
 :root {
   
-  --primary-color: #5c6ca4;
-  --secondary-color: #714e50;
-  --accent1-color: #d9e6f2;
-  --accent2-color: #a3cff7;
+  --primary-color: #f6d399;
+  --secondary-color: #d76545;
+  --accent1-color: #99403f;
+  --accent2-color: #481c1f;
+  --accent3-color: #945e8c;
 
  
   --heading-font: "Croissant One", sans-serif;
-  --paragraph-font: "Inclusive Sans", Helvetica, sans-serif;
+  --paragraph-font: "Inclusive Sans", sans-serif;
 
   
   --headline-color-on-white: #5c6ca4;  
   --headline-color-on-color: white; 
   --paragraph-color-on-white: #5c6ca4; 
-  --paragraph-color-on-color: white; 
-  --paragraph-background-color: #6483a0  ;
+  --paragraph-color-on-color: white;
   --nav-link-color: #d9e6f2;
   --nav-background-color: #714e50;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #5c6ca4;
 }
-
-
 
 
 body {
@@ -52,7 +50,7 @@ header {
   padding: 1em;
   text-align: center;
   color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
+  background-color: var(--accent1-color);
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
@@ -88,6 +86,9 @@ p {
 }
 .accent2{
   background-color: var(--accent2-color);
+}
+.accent2{
+  background-color: var(--accent3-color);
 }
 
 p.colored {
@@ -133,9 +134,7 @@ nav a:hover {
     "page2 page2 . . page3 page3";
 }
 .sitemap > div {
-
   text-align: center;
-
 }
 .sm-home {
   grid-area: home;

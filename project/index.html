@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WDD 131 Project by Anton Gorokhov" />
+    <meta name="author" content="Anton Gorokhov" />
+
+    <link href="styles/index.css" rel="stylesheet" />
+
+    <script src="stripts/footer.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Inclusive+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Russia</title>
+  </head>
+
+  <body>
+    <button id="menu" aria-label="Name"></button>
+    <header>
+      <h1>Dota</h1>
+
+      <nav class="navigation">
+        <a id="home" class="active">Home</a>
+        <a id="old">History</a>
+        <a id="new">Heroes</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-img">
+        <picture>
+          <source
+            srcset="images/dota-main-l.webp"
+            media="(min-width: 1000px)"
+          />
+          <source srcset="images/dota-main-m.webp" media="(min-width: 700px)" />
+          <img src="images/dota-main-s.webp" alt="dota-main" width="600" />
+        </picture>
+      </div>
+      
+      <div id="dota-container">
+        <h3>About Game</h3>
+        <p id="dota-text">
+          Dota2 is a popular multiplayer online battle arena (MOBA) game
+          developed and published by Valve Corporation. The game has become one
+          of the most popular and recognized projects in the world of computer
+          games, attracting millions of players from all over the world. Dota 2
+          is based on a popular custom map for Warcraft III called Defense of
+          the Ancients (DotA). The game involves two teams, each consisting of
+          five players. The goal of the game is to destroy the enemy's ancient
+          temple, called Ancient, while protecting your own.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p><span id="currentYear"></span> | Anton Gorokhov | Russia</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
