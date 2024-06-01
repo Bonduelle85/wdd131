@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="WDD 131 Project by Anton Gorokhov" />
-    <meta name="author" content="Anton Gorokhov" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WDD 131 Project by Anton Gorokhov">
+    <meta name="author" content="Anton Gorokhov">
 
-    <link href="styles/index.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/localStorage.js" defer></script>
     <script src="scripts/getDate.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css?family=Sansita"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
 
     <title>Dota</title>
   </head>
@@ -37,17 +36,12 @@
     <main>
       <div class="main-img">
         <picture>
-          <source
-            srcset="images/dota-main-l.webp"
-            media="(min-width: 800px)"
-          />
-          <source srcset="images/dota-main-m.webp" media="(min-width: 700px)" />
+          <source srcset="images/dota-main-l.webp" media="(min-width: 800px)">
+          <source srcset="images/dota-main-m.webp" media="(min-width: 700px)">
           <img
             src="images/dota-main-s.webp"
             alt="dota-main"
-            width="400"
-            height="100%"
-          />
+            width="400">
         </picture>
       </div>
 
@@ -66,37 +60,35 @@
       </div>
 
       <div id="main-grid">
-        <section id="sport-img-section">
+        <div id="sport-img-section">
           <picture>
             <source
               srcset="images/team-spirit-l.webp"
-              media="(min-width: 800px)"
-            />
+              media="(min-width: 800px)">
             <source
               srcset="images/team-spirit-s.webp"
-              media="(min-width: 700px)"
-            />
+              media="(min-width: 700px)">
             <img
               src="images/team-spirit-s.webp"
               alt="team-spirit"
               loading="lazy"
               width="400"
-              height="400"
-            />
+              height="400">
           </picture>
-        </section>
+        </div>
 
-        <section id="sport-msg-section">
+        <div id="sport-msg-section">
           <h2>More Than Just a Game</h2>
           <p>Dota2 is also</p>
           <p>an eSports discipline.</p>
-        </section>
-        <section id="background"></section>
+        </div>
+        <div id="background"></div>
       </div>
     </main>
 
     <p id="local-storage">
-      <span class="label">Number of visits to this page: </span><span class="visits"></span>
+      <span class="label">Number of visits to this page: </span
+      ><span class="visits"></span>
     </p>
 
     <footer>

@@ -68,7 +68,7 @@ header {
   border: 1px solid var(--accent2-color);
   box-shadow: 0 0 15px black;
 }
-header h1{
+header h1 {
   font-size: 2rem;
 }
 
@@ -135,7 +135,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-#local-storage{
+#local-storage {
   font-family: var(--font);
   text-align: center;
   transform: translateY(-50%);
@@ -163,7 +163,6 @@ h3 {
   box-shadow: 5px 5px 10px #555555;
   height: auto;
 }
-
 
 /*--Heroes Page--*/
 #category-title {
@@ -244,7 +243,6 @@ figcaption {
   text-align: center;
 }
 
-
 /* Footer */
 footer {
   background-color: var(--primary-color);
@@ -253,7 +251,6 @@ footer {
   text-align: center;
   border: 1px solid var(--accent2-color);
 }
-
 
 /* Responsive */
 @media screen and (min-width: 690px) {
@@ -358,10 +355,10 @@ footer {
     align-items: center;
     text-align: center;
   }
-  #sport-msg-section h2{
+  #sport-msg-section h2 {
     font-size: 1rem;
   }
-  #sport-msg-section p{
+  #sport-msg-section p {
     font-size: 1rem;
   }
 
