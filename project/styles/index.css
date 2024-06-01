@@ -1,6 +1,6 @@
 :root {
   --primary-color: #f6d399;
-  --secondary-color: #da9785; /*#d76545*/
+  --secondary-color: #da9785;
   --accent1-color: #99403f;
   --accent2-color: #481c1f;
   --accent3-color: #945e8c;
@@ -14,13 +14,14 @@
   padding: 0;
   box-sizing: border-box;
   color: black;
+  max-width: 1600px;
 }
 
 body {
   font-family: "Croissant One", "Inclusive Sans", sans-serif;
 }
 
-/* Navigation */
+/*Main Navigation*/
 #menu {
   font-size: 20px;
   background: none;
@@ -91,12 +92,12 @@ h3 {
   margin: 20px;
 }
 #dota-container {
-    background-color: var(--secondary-color);
-    margin: 40px;
-    padding: 30px;
-    border-radius: 6px;
-    border: 1px solid var(--accent2-color);
-    box-shadow: 0 0 15px black;
+  background-color: var(--secondary-color);
+  margin: 40px;
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid var(--accent2-color);
+  box-shadow: 0 0 15px black;
 }
 #dota-text {
   text-align: justify;
@@ -105,6 +106,90 @@ h3 {
 #dota-text::first-letter {
   font-size: 150%;
   font-family: "Croissant One";
+}
+
+/* Heroes Navigation */
+#heroes-menu {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: var(--accent2-color);
+}
+
+#heroes-menu::before {
+  content: "☰";
+  font-size: 40px;
+}
+
+#heroes-menu.open::before {
+  content: "X";
+}
+
+.heroes-navigation {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inclusive Sans";
+}
+
+.heroes-navigation a {
+  display: none;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.heroes-navigation a:hover {
+  color: var(--black);
+  text-decoration: underline;
+}
+
+.open a {
+  display: block;
+}
+
+#heroes {
+  grid-gap: 25px;
+  padding: 25px;
+}
+
+/* Card */
+.card {
+  text-align: center;
+  background-color: var(--primary-color);
+  position: relative;
+  box-shadow: 0px 3px 5px 0px var(--accent2-color);
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid var(--accent2-color);
+}
+
+.card h2 {
+  font-size: 1em;
+  color: var(--black);
+}
+
+.card p {
+  font-size: 0.8em;
+  color: var(--black);
+  font-family: "Inclusive Sans";
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Footer */
@@ -118,25 +203,35 @@ footer {
 
 /* Responsive */
 @media screen and (min-width: 640px) {
-  #temples {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 20px;
   }
-  #menu {
+  #menu,
+  #heroes-menu {
     display: none;
   }
-  .navigation {
+  .navigation,
+  .heroes-navigation {
     justify-content: center;
     flex-direction: row;
   }
-  .navigation a {
+  .navigation a,
+  .heroes-navigation a {
     display: block;
+  }
+  .heroes-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Inclusive Sans";
+    font-size: 0.5rem;
+  }
+
+  #heroes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 800px) {
@@ -146,23 +241,77 @@ footer {
     align-items: center;
     padding-inline: 20px;
   }
-  #menu {
+  #menu,
+  #heroes-menu {
     display: none;
   }
-  .navigation {
-    justify-content: center;
-    flex-direction: row;
-  }
-  .navigation a {
+  .navigation a,
+  .heroes-navigation a {
     display: block;
   }
-
-  #temples {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .heroes-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Inclusive Sans";
+    font-size: 0.5rem;
   }
   figure img,
   figcaption {
     grid-column: auto;
+  }
+  #heroes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*History Rules Page*/
+  #history-rules-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 0.5fr 0.5fr 4fr 0.5fr 0.5fr 4fr;
+    gap: 20px 0px;
+    margin-top: 60px;
+  }
+
+  #history-title-section {
+    grid-column: 3/8;
+    grid-row: 2/3;
+  }
+
+  #history-text-section {
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+
+  #history-img-section {
+    grid-column: 6/10;
+    grid-row: 3/4;
+  }
+
+  #rules-title-section {
+    grid-column: 3/8;
+    grid-row: 5/6;
+  }
+
+  #rules-text-section {
+    grid-column: 6/10;
+    grid-row: 6/7;
+  }
+
+  #rules-img-section {
+    grid-column: 1/5;
+    grid-row: 6/7;
+  }
+
+  #history-text-section p,
+  #rules-text-section p {
+    text-align: justify;
+  }
+
+  #history-img,
+  #rules-img {
+    border: 5px solid #435465;
+    box-shadow: 5px 5px 10px #555555;
+    height: auto;
   }
 }

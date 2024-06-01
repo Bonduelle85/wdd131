@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WDD 131 Project by Anton Gorokhov" />
+    <meta name="author" content="Anton Gorokhov" />
+
+    <link href="styles/index.css" rel="stylesheet" />
+
+    <script src="scripts/scripts.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Inclusive+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>About</title>
+  </head>
+
+  <body>
+    <button id="menu" aria-label="Name"></button>
+    <header>
+      <h1>Dota</h1>
+
+      <nav class="navigation">
+        <a id="home" class="active">Home</a>
+        <a id="old">History</a>
+        <a id="new">Heroes</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-img">
+        <picture>
+          <source
+            srcset="images/page2-main-l.webp"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="images/page2-main-m.webp"
+            media="(min-width: 700px)"
+          />
+          <img src="images/page2-main-s.webp" alt="dota-main" width="600" loading="lazy"/>
+        </picture>
+      </div>
+
+      <div id="history-rules-container">
+        <section id="history-title-section">
+          <h3>History</h3>
+        </section>
+
+        <section id="history-text-section">
+          <p>
+            Defense of the Ancients (DotA) began its history as a user-created
+            map for the game Warcraft III: Reign of Chaos and its expansion The
+            Frozen Throne. This map was created by fans and quickly gained
+            popularity due to its unique gameplay and strategic approach. In
+            2009, Valve decided to develop their own version of the game called
+            Dota 2. After several years of development and testing, Dota 2 was
+            released in 2013 and immediately captured the hearts of millions of
+            players worldwide. Today, Dota 2 remains one of the most popular and
+            recognized games in the MOBA genre.
+          </p>
+        </section>
+
+        <section id="history-img-section">
+          <img
+            id="history-img"
+            src="images/history-img.webp"
+            alt="dota-main"
+            width="360"
+            loading="lazy"
+          />
+        </section>
+
+        <section id="rules-title-section">
+          <h3>Rules</h3>
+        </section>
+
+        <section id="rules-text-section">
+          <p>
+            Dota 2 is a multiplayer online battle arena (MOBA) game where two
+            teams of five players each compete to destroy the enemy team's
+            Ancient while defending their own. Players select from a roster of
+            heroes with unique abilities and roles. The game is played on a map
+            with three lanes, each guarded by defensive towers. Players earn
+            gold and experience by defeating enemy units and structures to level
+            up and purchase items to strengthen their heroes. Communication and
+            teamwork are essential to success, as players must coordinate
+            strategies, control map objectives, and outmaneuver their opponents
+            to achieve victory. The team that destroys the enemy Ancient first
+            wins the game.
+          </p>
+        </section>
+
+        <section id="rules-img-section">
+          <img
+            id="history-img"
+            src="images/rules-img.webp"
+            alt="dota-main"
+            width="360"
+            loading="lazy"
+          />
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p><span id="currentYear"></span> | Anton Gorokhov | Russia</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
 
-    <title>Dota</title>
+    <title>Heroes</title>
   </head>
 
   <body>
@@ -26,8 +26,8 @@
       <h1>Dota</h1>
 
       <nav class="navigation">
-        <a id="home" class="active">Home</a>
-        <a id="old">History</a>
+        <a id="home" href="index.html" class="active">Home</a>
+        <a id="old" href="index.html">History and Rules</a>
         <a id="new">Heroes</a>
       </nav>
     </header>
@@ -36,27 +36,40 @@
       <div class="main-img">
         <picture>
           <source
-            srcset="images/dota-main-l.webp"
+            srcset="images/page3-main-l.webp"
             media="(min-width: 1000px)"
           />
-          <source srcset="images/dota-main-m.webp" media="(min-width: 700px)" />
-          <img src="images/dota-main-s.webp" alt="dota-main" width="600" />
+          <source
+            srcset="images/page3-main-m.webp"
+            media="(min-width: 700px)"
+          />
+          <img src="images/page3-main-s.webp" alt="page3-main" loading="lazy" />
         </picture>
       </div>
-      
-      <div id="dota-container">
-        <h3>About Game</h3>
-        <p id="dota-text">
-          Dota2 is a popular multiplayer online battle arena (MOBA) game
-          developed and published by Valve Corporation. The game has become one
-          of the most popular and recognized projects in the world of computer
-          games, attracting millions of players from all over the world. Dota 2
-          is based on a popular custom map for Warcraft III called Defense of
-          the Ancients (DotA). The game involves two teams, each consisting of
-          five players. The goal of the game is to destroy the enemy's ancient
-          temple, called Ancient, while protecting your own.
-        </p>
+
+      <div id="heroes-navigation-container">
+        <button id="heroes-menu" aria-label="Name"></button>
+    
+        <nav class="heroes-navigation">
+            <a id="all">All</a>
+            <a id="carry">Carry</a>
+            <a id="initiator">Initiator</a>
+            <a id="escape">Escape</a>
+            <a id="durable">Durable</a>
+            <a id="nuker">Nuker</a>
+            <a id="support">Support</a>
+            <a id="disabler">Disabler</a>
+            <a id="pusher">Pusher</a>
+            <a id="jungler">Jungler</a>
+        </nav>
+        
       </div>
+      <hr>
+      <h2 id="category-title">All</h2>
+      <div id="heroes">
+        <!-- created programmatically -->
+      </div>
+      
     </main>
 
     <footer>
