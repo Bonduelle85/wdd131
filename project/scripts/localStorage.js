@@ -1,6 +1,6 @@
 const visitsDisplay = document.querySelector(".visits");
 
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
 
 if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits;
@@ -10,5 +10,5 @@ if (numVisits !== 0) {
 
 numVisits++;
 
-localStorage.setItem("numVisits-ls", numVisits);
+localStorage.setItem("numVisits", numVisits);
 
