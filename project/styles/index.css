@@ -77,7 +77,7 @@ header {
   box-shadow: 0 0 15px black;
 }
 
-/* Main */
+/*--Main Page--*/
 main {
   margin: 15px auto;
 }
@@ -99,15 +99,46 @@ h3 {
   border: 1px solid var(--accent2-color);
   box-shadow: 0 0 15px black;
 }
-#dota-text {
+#dota-text,
+#history-text-section p,
+#rules-text-section p {
   text-align: justify;
   font-family: "Inclusive Sans";
 }
-#dota-text::first-letter {
+#dota-text::first-letter,
+#history-text-section p::first-letter,
+#rules-text-section p::first-letter {
   font-size: 150%;
   font-family: "Croissant One";
 }
 
+/*--History/Rules Page--*/
+#history-rules-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+#history-img-section,
+#rules-img-section {
+  margin-top: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+#history-img,
+  #rules-img {
+    border: 5px solid #435465;
+    box-shadow: 5px 5px 10px #555555;
+    height: auto;
+  }
+
+/*--Heroes Page--*/
+#category-title {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--accent2-color);
+}
 /* Heroes Navigation */
 #heroes-menu {
   font-size: 20px;
@@ -134,9 +165,9 @@ h3 {
 .heroes-navigation a {
   display: none;
   text-align: center;
-  padding: 1rem;
+  padding: 0.4rem;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.2rem;
 }
 
 .heroes-navigation a:hover {
@@ -178,6 +209,7 @@ h3 {
 .card img {
   max-width: 100%;
   height: auto;
+  border-radius: 6px;
 }
 
 figure {
@@ -218,6 +250,9 @@ footer {
     justify-content: center;
     flex-direction: row;
   }
+  .heroes-navigation {
+    margin-top: 30px;
+  }
   .navigation a,
   .heroes-navigation a {
     display: block;
@@ -249,6 +284,7 @@ footer {
   .heroes-navigation a {
     display: block;
   }
+
   .heroes-navigation {
     display: flex;
     flex-wrap: wrap;
@@ -270,48 +306,38 @@ footer {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 0.5fr 0.5fr 4fr 0.5fr 0.5fr 4fr;
     gap: 20px 0px;
-    margin-top: 60px;
   }
-
   #history-title-section {
     grid-column: 3/8;
     grid-row: 2/3;
   }
-
   #history-text-section {
     grid-column: 1/5;
     grid-row: 3/4;
   }
-
   #history-img-section {
     grid-column: 6/10;
     grid-row: 3/4;
   }
-
   #rules-title-section {
     grid-column: 3/8;
     grid-row: 5/6;
   }
-
   #rules-text-section {
     grid-column: 6/10;
     grid-row: 6/7;
   }
-
   #rules-img-section {
     grid-column: 1/5;
     grid-row: 6/7;
   }
-
+  #history-rules-container{
+    padding: 40px;
+    justify-content: center; 
+    align-items: center; 
+  }
   #history-text-section p,
   #rules-text-section p {
     text-align: justify;
-  }
-
-  #history-img,
-  #rules-img {
-    border: 5px solid #435465;
-    box-shadow: 5px 5px 10px #555555;
-    height: auto;
   }
 }

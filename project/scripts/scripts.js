@@ -16,13 +16,7 @@ hamButton1.addEventListener("click", () => {
   hamButton1.classList.toggle("open");
 });
 
-// Footer
-document.querySelector("#currentYear").innerHTML = `&copy ${new Date().getFullYear()}`
-document.querySelector("#lastModified").innerHTML = `Last Modification: ${document.lastModified}`
-
-
 // Heroes Page
-
 // makeCards function
 const makeCards = (heroesList) => {
   const container = document.querySelector("#heroes");
