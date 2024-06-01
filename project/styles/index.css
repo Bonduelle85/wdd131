@@ -5,8 +5,7 @@
   --accent2-color: #481c1f;
   --accent3-color: #945e8c;
 
-  --heading-font: "Croissant One", sans-serif;
-  --paragraph-font: "Inclusive Sans", sans-serif;
+  --font: "Inclusive Sans", sans-serif;
 }
 
 * {
@@ -18,7 +17,7 @@
 }
 
 body {
-  font-family: "Croissant One", "Inclusive Sans", sans-serif;
+  font-family: var(--font);
 }
 
 /*Main Navigation*/
@@ -69,6 +68,9 @@ header {
   border: 1px solid var(--accent2-color);
   box-shadow: 0 0 15px black;
 }
+header h1{
+  font-size: 2rem;
+}
 
 /*--Main Page--*/
 main {
@@ -96,13 +98,13 @@ h3 {
 #history-text-section p,
 #rules-text-section p {
   text-align: justify;
-  font-family: "Inclusive Sans";
+  font-family: var(--font);
 }
 #dota-text::first-letter,
 #history-text-section p::first-letter,
 #rules-text-section p::first-letter {
   font-size: 150%;
-  font-family: "Croissant One";
+  font-family: var(--font);
 }
 
 /*Main Page Grid*/
@@ -129,12 +131,12 @@ h3 {
   text-align: center;
 }
 #sport-msg-section p {
-  font-family: "Inclusive Sans";
+  font-family: var(--font);
   font-size: 1.5rem;
 }
 
 #local-storage{
-  font-family: "Inclusive Sans";
+  font-family: var(--font);
   text-align: center;
   transform: translateY(-50%);
   margin-top: 30px;
@@ -186,7 +188,7 @@ h3 {
 .heroes-navigation {
   display: flex;
   flex-direction: column;
-  font-family: "Inclusive Sans";
+  font-family: var(--font);
 }
 .heroes-navigation a {
   display: none;
@@ -224,7 +226,7 @@ h3 {
 .card p {
   font-size: 0.8em;
   color: var(--black);
-  font-family: "Inclusive Sans";
+  font-family: var(--font);
 }
 .card img {
   max-width: 100%;
@@ -246,7 +248,7 @@ figcaption {
 /* Footer */
 footer {
   background-color: var(--primary-color);
-  font-family: "Inclusive Sans";
+  font-family: var(--font);
   padding: 1rem 1rem 1rem 1rem;
   text-align: center;
   border: 1px solid var(--accent2-color);
@@ -280,7 +282,7 @@ footer {
   .heroes-navigation {
     display: flex;
     flex-wrap: wrap;
-    font-family: "Inclusive Sans";
+    font-family: var(--font);
     font-size: 0.5rem;
   }
   #heroes {
@@ -307,7 +309,7 @@ footer {
   .heroes-navigation {
     display: flex;
     flex-wrap: wrap;
-    font-family: "Inclusive Sans";
+    font-family: var(--font);
     font-size: 0.5rem;
   }
   figure img,
