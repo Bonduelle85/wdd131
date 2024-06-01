@@ -346,6 +346,12 @@ footer {
     align-items: center;
     text-align: center;
   }
+  #sport-msg-section h2{
+    font-size: 1rem;
+  }
+  #sport-msg-section p{
+    font-size: 1rem;
+  }
 
   /*History Rules Page*/
   #history-rules-container {
