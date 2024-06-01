@@ -132,6 +132,14 @@ h3 {
   font-size: 1.5rem;
 }
 
+#local-storage{
+  font-family: "Inclusive Sans";
+  text-align: center;
+  transform: translateY(-50%);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 /*--History/Rules Page--*/
 #history-rules-container {
   display: flex;
@@ -363,6 +371,8 @@ footer {
   #history-title-section {
     grid-column: 3/8;
     grid-row: 2/3;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent2-color);
   }
   #history-text-section {
     grid-column: 1/5;
@@ -375,6 +385,8 @@ footer {
   #rules-title-section {
     grid-column: 3/8;
     grid-row: 5/6;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent2-color);
   }
   #rules-text-section {
     grid-column: 6/10;
